@@ -1,0 +1,37 @@
+{
+  "categorize": {
+    "task": "categorize",
+    "score": 0.9,
+    "steps": 10,
+    "resolved": 10,
+    "total": 10,
+    "model": "gemini-2.5-flash"
+  },
+  "decode_upi": {
+    "task": "decode_upi",
+    "score": 0.4470856389986825,
+    "steps": 10,
+    "resolved": 10,
+    "total": 10,
+    "model": "gemini-2.5-flash"
+  },
+  "full_reconciliation": {
+    "task": "full_reconciliation",
+    "score": {
+      "score": 0.3214285714285714,
+      "category_score": 0.42857142857142855,
+      "duplicate_score": 0.0,
+      "anomaly_score": 0.5,
+      "correct_categories": 15,
+      "total_transactions": 35,
+      "flagged_duplicates": 0,
+      "total_duplicates": 3,
+      "flagged_anomalies": 1,
+      "total_anomalies": 2
+    },
+    "steps": 35,
+    "resolved": 35,
+    "total": 35,
+    "model": "gemini-2.5-flash"
+  }
+}

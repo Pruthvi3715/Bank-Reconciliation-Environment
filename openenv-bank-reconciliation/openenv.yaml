@@ -1,0 +1,20 @@
+name: bank-reconciliation-env
+version: "1.0.0"
+description: "AI environment for reconciling Indian bank statements"
+tasks:
+  - categorize
+  - decode_upi
+  - full_reconciliation
+action_space:
+  - transaction_id
+  - assigned_category
+  - merchant_label
+  - flag_type
+observation_space:
+  - transactions
+  - resolved_count
+  - episode_step
+  - context_hints
+reward_range:
+  min: -0.3
+  max: 1.0
