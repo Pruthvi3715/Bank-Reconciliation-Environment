@@ -68,7 +68,7 @@ def log_step(
 def log_end(success: bool, steps: int, score: float, rewards: List[float]):
     rewards_str = ",".join(f"{r:.2f}" for r in rewards)
     print(
-        f"[END] success={str(success).lower()} steps={steps} score={score:.2f} rewards={rewards_str}",
+        f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}",
         flush=True,
     )
 
@@ -120,7 +120,7 @@ Return a JSON object with your action. Only JSON, no markdown:"""
 
 
 def run_task(task_name: str, seed: int = 42) -> Dict[str, Any]:
-    log_start(task=task_name, env="bank-reconciliation", model=MODEL_NAME)
+    log_start(task=task_name, env="bank_reconciliation", model=MODEL_NAME)
 
     env = BankReconciliationEnv(seed=seed)
 
